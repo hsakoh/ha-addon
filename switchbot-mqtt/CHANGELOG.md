@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.3 - 2023-09-10
+
+- Handling Cases Where Device Type Is Not Included in API Responses.
+    - Added an option to forcibly specify the device type for each device ID.
+
 ## v1.0.2 - 2023-09-02
 
 - Fixed a bug in the test execution modal with command type of tag.
