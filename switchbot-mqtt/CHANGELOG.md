@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.4 - 2023-09-27
+
+- Added error log output for initial configuration.
+
 ## v1.0.3 - 2023-09-10
 
 - Handling Cases Where Device Type Is Not Included in API Responses.
