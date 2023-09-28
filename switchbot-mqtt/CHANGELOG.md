@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.6 - 2023-09-28
+
+- Support for KeyPad DeleteKey.
+
 ## v1.0.5 - 2023-09-28
 
 - Support for non-required arguments in KeyPad CreateKey.
