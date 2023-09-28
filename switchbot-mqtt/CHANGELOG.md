@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.5 - 2023-09-28
+
+- Support for non-required arguments in KeyPad CreateKey.
+
 ## v1.0.4 - 2023-09-27
 
 - Added error log output for initial configuration.
