@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.0.7 - 2024-01-01
+
+- Support for Curtain pause comamnd.
+    - To add a command to an existing device, delete the device once in `Device Configuration` and re-fetch it.
+- Added example of default settings for EnforceDeviceTypes.
+
+
 ## v1.0.6 - 2023-09-28
 
 - Support for KeyPad DeleteKey.
