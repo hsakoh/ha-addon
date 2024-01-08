@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.8 - 2024-01-08
+
+- Two fixes regarding the handling of the 'Lock State' value in SwitchBot Lock:
+    - Fixed an issue where, in the case of Webhooks, the binary sensor was not properly receiving the value because it was received in uppercase.
+    - Fixed an issue in the binary sensor of the device type 'Lock' where the ON and OFF states were reversed.
+
 ## v1.0.7 - 2024-01-01
 
 - Support for Curtain pause comamnd.
