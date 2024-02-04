@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v1.0.9 - 2024-02-03
+
+- Due to an update in the API specifications, support for two devices has been added:
+    - Battery Circulator Fan
+    - Curtain3
+        - With the release of the API specifications, there is a possibility that responses for the device type have been added.
+        - If you are specifying EnforceDeviceTypes, introduced in v1.0.3, you may have the option to remove it (unconfirmed).
+
 ## v1.0.8 - 2024-01-08
 
 - Two fixes regarding the handling of the 'Lock State' value in SwitchBot Lock:
