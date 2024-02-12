@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.1.0 - 2024-02-12
+
+- Fixed an issue where the setting value for the addon configuration `Mqtt.AutoConfig` could not be read.
+
 ## v1.0.9 - 2024-02-03
 
 - Due to an update in the API specifications, support for two devices has been added:
