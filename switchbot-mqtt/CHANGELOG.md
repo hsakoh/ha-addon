@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## v1.1.0 - 2024-02-12
+## v1.0.11 - 2024-05-08
+
+- Fixed the issue of not exposing the port to the outside when not using Ngrok.
+
+## v1.0.10 - 2024-02-12
 
 - Fixed an issue where the setting value for the addon configuration `Mqtt.AutoConfig` could not be read.
 
