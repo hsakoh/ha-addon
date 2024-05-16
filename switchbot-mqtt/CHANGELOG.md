@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.13 - 2024-05-17
+
+- Due to an update in the API specifications, support for one device has been added:
+    - Lock Pro
+
 ## v1.0.12 - 2024-05-17
 
 - Due to an update in the API specifications, support for two devices has been added:
