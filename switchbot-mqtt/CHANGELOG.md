@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.12 - 2024-05-17
+
+- Due to an update in the API specifications, support for two devices has been added:
+    - Water Leak Detector
+    - Floor Cleaning Robot S10
+
 ## v1.0.11 - 2024-05-08
 
 - Fixed the issue of not exposing the port to the outside when not using Ngrok.
