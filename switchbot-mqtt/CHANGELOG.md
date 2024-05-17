@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.14 - 2024-05-17
+
+- Changed the implementation so that when retrieving the device list, if there are unknown device types, it logs the issue instead of throwing an exception and continues processing.
+    - (I currently know that there is a device type called `Hub Mini2`. One possible solution is to specify `EnforceDeviceTypes` to force it to be recognized as a `Hub mini`.)
+- Corrected errors in the CSV master data related to the display of some device names.
+
 ## v1.0.13 - 2024-05-17
 
 - Due to an update in the API specifications, support for one device has been added:
