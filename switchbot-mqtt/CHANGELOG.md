@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.15 - 2024-05-18
+- Fixed the payload value error for the selfClean command of the Floor Cleaning Robot S10 according to the API specification.
+
 ## v1.0.14 - 2024-05-17
 
 - Changed the implementation so that when retrieving the device list, if there are unknown device types, it logs the issue instead of throwing an exception and continues processing.
