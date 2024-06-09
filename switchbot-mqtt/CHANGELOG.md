@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.16 - 2024-06-09
+- The field definitions for Keypad, Keypad Touch, and Ceiling Light Pro have been updated.
+    - If you are using any of these devices, please delete the MQTT device, then delete and reacquire the device on the Ingress page, and restart the add-on.
+    - (You don't necessarily need to reacquire them; it's not a significant update in practical terms.)
+
 ## v1.0.15 - 2024-05-18
 - Fixed the payload value error for the selfClean command of the Floor Cleaning Robot S10 according to the API specification.
 
