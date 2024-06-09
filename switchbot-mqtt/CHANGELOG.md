@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.17 - 2024-06-10
+- Improvement of DeviceType determination in the payload of Webhook when EnforceDeviceTypes is specified.
+
 ## v1.0.16 - 2024-06-09
 - The field definitions for Keypad, Keypad Touch, and Ceiling Light Pro have been updated.
     - If you are using any of these devices, please delete the MQTT device, then delete and reacquire the device on the Ingress page, and restart the add-on.
