@@ -12,6 +12,7 @@ image: ghcr.io/hsakoh/switchbotmqtt-{arch}
 arch:
   - aarch64
   - amd64
+  - armv7
 services:
   - 'mqtt:need'
 ingress: true
