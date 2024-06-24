@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.18 - 2024-06-24
+- Fixed the issue where changes in the following fields for specific devices were not received by the MQTT integration via Webhook.
+    - powerState: PlugMiniJp, PlugMiniUs
+    - power: CeilingLight, CeilingLightPro, StripLight, ColorBulb, BatteryCirculatorFan
+
 ## v1.0.17 - 2024-06-10
 - Improvement of DeviceType determination in the payload of Webhook when EnforceDeviceTypes is specified.
 
