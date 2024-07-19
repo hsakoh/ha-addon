@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.19 - 2024-07-19
+- **Important Security Update**
+    - Fixed an issue where the Ingress page was publicly accessible when using Ngrok to receive Webhooks.
+
 ## v1.0.18 - 2024-06-24
 - Fixed the issue where changes in the following fields for specific devices were not received by the MQTT integration via Webhook.
     - powerState: PlugMiniJp, PlugMiniUs
