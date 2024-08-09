@@ -1,4 +1,8 @@
 # CHANGELOG
+## v1.0.20 - 2024-08-10
+- Updated the add-on runtime to .NET 8 LTS.
+- Changed the base image of the add-on from [Docker Hub](https://hub.docker.com/r/homeassistant/amd64-base/tags) to [GitHub Container Registry](https://github.com/home-assistant/docker-base/pkgs/container/amd64-base).
+- Made minor improvements to log output.
 
 ## v1.0.19 - 2024-07-19
 - **Important Security Update**
