@@ -1,4 +1,11 @@
 # CHANGELOG
+## v1.0.21 - 2024-08-15
+- Improvements to Keypad and Keypad Touch
+    - Added a screen for viewing, adding, and deleting passcodes on the Ingress page.
+    - Changed the method of specifying the Key ID in the DeleteKey command from Mqtt.Number to Mqtt.Select.
+        - To apply the input format change, you need to delete the corresponding command device in the MQTT integration and restart the addon (or service).
+    - For more details, please refer to [discussion #35](https://github.com/hsakoh/switchbot-mqtt/discussions/35).
+
 ## v1.0.20 - 2024-08-10
 - Updated the add-on runtime to .NET 8 LTS.
 - Changed the base image of the add-on from [Docker Hub](https://hub.docker.com/r/homeassistant/amd64-base/tags) to [GitHub Container Registry](https://github.com/home-assistant/docker-base/pkgs/container/amd64-base).
