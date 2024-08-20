@@ -1,4 +1,19 @@
 # CHANGELOG
+
+## v1.0.22 - 2024-08-21
+- Fixed an issue where the correct value was not sent when using a command with a single input parameter entered through a select box.
+    - This issue occurred with the following commands.
+        - RobotVacuumCleanerS1/PowLevel
+        - RobotVacuumCleanerS1Plus/PowLevel
+        - RobotVacuumCleanerS10/selfClean
+        - Humidifier/setMode
+        - BatteryCirculatorFan/setNightLightMode
+        - BatteryCirculatorFan/setWindMode
+- Add KeyPad/KeyPadTouch hubDeviceId field.
+    - Fixed an issue where MqttCoreService would fail to start if the device was not deleted and reloaded after adding field definitions.
+- Added implementation for data protection in middleware.
+    - This reduces some warning and error log outputs that occur when the add-on is restarted.
+
 ## v1.0.21 - 2024-08-15
 - Improvements to Keypad and Keypad Touch
     - Added a screen for viewing, adding, and deleting passcodes on the Ingress page.
