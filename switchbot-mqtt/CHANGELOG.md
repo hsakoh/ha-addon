@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## v1.0.23 - 2024-08-28
+- Support for the following four undocumented devices has been added:
+    - W4600000 Universal Remote
+        - The battery level and charging status can be checked.
+    - W3800511 Circulator Fan Lite
+        - Functions similarly to the Battery Circulator Fan.
+    - W4001100 Pan/Tilt Cam Plus (5MP)
+        - Functions similarly to the Pan/Tilt Cam. (Mainly receives motion detection Webhooks)
+        - Since the device type is not included during device enumeration, Use EnforceDeviceType to clearly indicate `Pan/Tilt Cam Plus 5MP`.
+    - W4102000 Outdoor Spotlight Cam 2K (3MP)
+        - No functionality is available.
+        - Since the device type is not included during device enumeration, Use EnforceDeviceType to clearly indicate `Outdoor Spotlight Cam 2K`.
+   
 ## v1.0.22 - 2024-08-21
 - Fixed an issue where the correct value was not sent when using a command with a single input parameter entered through a select box.
     - This issue occurred with the following commands.
