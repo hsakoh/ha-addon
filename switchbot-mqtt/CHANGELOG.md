@@ -1,4 +1,14 @@
 # CHANGELOG
+## v1.0.24 - 2024-08-30
+- Support for the undocumented webhook payload format of the Robot Vacuum Cleaner S10.
+- Due to an update in the API specifications, support for two devices has been added:
+    - Mini Robot Vacuum K10+
+    - Mini Robot Vacuum K10+ Pro
+    - If you were using EnforceDeviceType to run the K10+ as an S1, you can remove the EnforceDeviceType. (In that case, it is recommended to first delete the MQTT device, then change the settings, and restart the add-on.)
+    - Additionally, for users using the K10+ Pro, I would appreciate your feedback on whether the device is correctly identified. (The API Specification is unclear whether the DeviceType is `K10+Pro` or `K10+ Pro`.)
+- Add CirculatorFan hudDeviceId field.
+    - If you are using this device, please delete the MQTT device, then delete and reacquire the device on the Ingress page, and restart the add-on.
+    - (You don't necessarily need to reacquire them; it's not a significant update in practical terms.)
 
 ## v1.0.23 - 2024-08-28
 - Support for the following four undocumented devices has been added:
