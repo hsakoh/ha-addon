@@ -1,4 +1,30 @@
 # CHANGELOG
+## v1.0.25 - 2024-08-31
+- Resolved the issue where the MQTT binary sensors for the following five devices were not displaying the correct values:
+  - Curtain, Curtain3, BlindTilt: `moving`
+  - MotionSensor, ContactSensor: `moveDetected`
+
+- Added support for Webhook payloads for the following two devices:
+  - Motion Sensor: `battery`
+  - Contact Sensor: `battery`, `openState`, `brightness`, `doorMode`
+  - When updating the add-on, the `uniqueId` for the above MQTT sensors (fields) will change. 
+    - Please either delete the MQTT devices and restart the add-on or manually delete the old MQTT sensors (fields).
+
+- Improved the field display when receiving Webhook data for the Robot Vacuum Cleaner S10.
+  - Specifically, the MQTT sensor value template has been modified to prevent other fields from being marked as "Unknown" when only part of the status is received upon a state change.
+  - As part of the above changes, the status topics, which were previously divided into three, have been consolidated into one:
+    - Before:
+      - `switchbot/{deviceId}/status/{fieldSourceType}`
+      - `{fieldSourceType}`: status|webhook|both
+    - After:
+      - `switchbot/{deviceId}/status`
+  - Additionally, the manual polling request topic has been updated:
+    - Before:
+      - `switchbot/{deviceId}/status/update`
+    - After:
+      - `switchbot/{deviceId}/status/polling`
+  - These changes should not affect the average add-on user. However, this is a caution for those who were directly publishing/subscribing to MQTT topics.
+
 ## v1.0.24 - 2024-08-30
 - Support for the undocumented webhook payload format of the Robot Vacuum Cleaner S10.
 - Due to an update in the API specifications, support for two devices has been added:
