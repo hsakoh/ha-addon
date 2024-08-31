@@ -22,7 +22,7 @@
     - Before:
       - `switchbot/{deviceId}/status/update`
     - After:
-      - `switchbot/{deviceId}/status/polling`
+      - `switchbot/{deviceId}/polling`
   - These changes should not affect the average add-on user. However, this is a caution for those who were directly publishing/subscribing to MQTT topics.
 
 ## v1.0.24 - 2024-08-30
