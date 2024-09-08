@@ -1,4 +1,8 @@
 # CHANGELOG
+
+## v1.0.26 - 2024-09-08
+- Fixed an issue where the timestamps for webhook and polling always displayed the same value.
+
 ## v1.0.25 - 2024-08-31
 - Resolved the issue where the MQTT binary sensors for the following five devices were not displaying the correct values:
   - Curtain, Curtain3, BlindTilt: `moving`
