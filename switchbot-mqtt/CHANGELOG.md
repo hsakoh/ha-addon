@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.0.27 - 2024-09-16
+- Added log output related to MQTT connections.
+- Support for the following four undocumented devices has been added:
+    - W2500032 Wallet Finder Card
+        - No functionality is available.
+        - Since the device type is not included during device enumeration, Use EnforceDeviceType to clearly indicate `Wallet Finder Card`.
+
 ## v1.0.26 - 2024-09-08
 - Fixed an issue where the timestamps for webhook and polling always displayed the same value.
 
