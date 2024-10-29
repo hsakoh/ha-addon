@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.28 - 2024-10-29
+- Support for the following undocumented device has been added:
+    - Meter Pro
+    - Meter Pro(CO2 Monitor)
+
 ## v1.0.27 - 2024-09-16
 - Added log output related to MQTT connections.
 - Support for the following undocumented device has been added:
