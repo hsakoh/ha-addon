@@ -1,9 +1,22 @@
 # CHANGELOG
 
+## v1.0.29 - 2024-11-10
+- Support for the following new documented device has been added:
+    - W3002500 Robot Vacuum K10+ Pro Combo
+    - W3902300 Evaporative Humidifier
+    - W3902310 Evaporative Humidifier (Auto-refill)
+    - W5302300 Air Purifier PM2.5
+    - W5302310 Air Purifier Table PM2.5	
+    - W5302300 Air Purifier VOC
+    - W5302310 Air Purifier Table VOC
+    - W5000000 Roller Shade
+    - W5502310 Relay Switch 1PM
+    - W5502300 Relay Switch 1
+
 ## v1.0.28 - 2024-10-29
 - Support for the following undocumented device has been added:
-    - Meter Pro
-    - Meter Pro(CO2 Monitor)
+    - W4900000 Meter Pro
+    - W4900010 Meter Pro(CO2 Monitor)
 
 ## v1.0.27 - 2024-09-16
 - Added log output related to MQTT connections.
