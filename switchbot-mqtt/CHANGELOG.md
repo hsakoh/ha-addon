@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.30 - 2024-12-06
+- Made the MQTT message retain configurable.
+- Updated dependent libraries.
+
 ## v1.0.29 - 2024-11-10
 - Support for the following new documented device has been added:
     - W3002500 Robot Vacuum K10+ Pro Combo
