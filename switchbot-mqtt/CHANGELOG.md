@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.31 - 2024-12-16
+- Made the base URL of the SwitchBot API configurable.
+
 ## v1.0.30 - 2024-12-06
 - Made the MQTT message retain configurable.
 - Updated dependent libraries.
