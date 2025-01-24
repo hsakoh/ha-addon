@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.0.32 - 2025-01-24
+- Remove Relay Switch 1 field `power`
+  - Please either delete the MQTT devices and restart the add-on or manually delete the old MQTT sensors (fields).
+
+- An option to persist device state has been added. (Disabled by default.)
+  - When enabled, the last device state is persisted and continuously sent to the state topic.
+  - This helps reduce the duration during which MQTT sensors are in an "unknown" state after restarting Home Assistant.
+  - Specifically, it reduces the occurrence of warning logs in the MQTT integration in scenarios such as when a webhook is not triggered after a restart. (This also applies when webhooks are received without polling.)
+  - The downside is that persisting the state involves writing to the file system each time a state notification is made.
+
 ## v1.0.31 - 2024-12-16
 - Made the base URL of the SwitchBot API configurable.
 
