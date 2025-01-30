@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.33 - 2025-01-30
+- Fixed an issue where the setPosition command for Roller Shade was not functioning properly.
+
 ## v1.0.32 - 2025-01-24
 - Remove Relay Switch 1 field `power`
   - Please either delete the MQTT devices and restart the add-on or manually delete the old MQTT sensors (fields).
