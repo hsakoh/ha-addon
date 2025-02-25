@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.5 - 2025-02-25
+
+- Updated the add-on runtime to .NET 9.
+
 ## v1.0.4 - 2024-08-10
 
 - Updated the add-on runtime to .NET 8 LTS.
