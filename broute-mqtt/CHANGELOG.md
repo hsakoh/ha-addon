@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.6 - 2025-03-03
+
+- [Experimental] add BP35C0 support
+
 ## v1.0.5 - 2025-02-25
 
 - Updated the add-on runtime to .NET 9.

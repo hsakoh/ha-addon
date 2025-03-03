@@ -1,6 +1,6 @@
 name: "BRoute-Mqtt"
 description: "[For Japan] Integrate low-voltage smart energy meters into Home Assistant's MQTT as devices/sensors via the Wi-SUN dongle and ECHONET Lite protocol."
-version: "1.0.5"
+version: "1.0.6"
 slug: "broute_mqtt"
 url: "https://github.com/hsakoh/broute-mqtt"
 startup: application
@@ -19,6 +19,7 @@ options:
     Id: ''
     Pw: ''
     SerialPort: '/dev/ttyUSB0'
+    UseBP35C0Commands: false
     ForcePANScan: false
     PanDescSavePath: '/data/EPANDESC.json'
     InstantaneousValueInterval: '00:01:10'
@@ -44,6 +45,7 @@ schema:
     Id: str
     Pw: password
     SerialPort: str
+    UseBP35C0Commands: bool
     ForcePANScan: bool
     PanDescSavePath: str
     InstantaneousValueInterval: str
