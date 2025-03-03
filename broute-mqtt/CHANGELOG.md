@@ -1,5 +1,6 @@
 # CHANGELOG
 
+## v1.0.7 - 2025-03-03
 ## v1.0.6 - 2025-03-03
 
 - [Experimental] add BP35C0 support
