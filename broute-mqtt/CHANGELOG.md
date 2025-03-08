@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.8 - 2025-03-08
+- change instantaneous_electric_power device class(APPARENT_POWER->POWER)
+
 ## v1.0.7 - 2025-03-03
 ## v1.0.6 - 2025-03-03
 
