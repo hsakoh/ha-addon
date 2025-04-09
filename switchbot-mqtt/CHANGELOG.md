@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.34 - 2025-04-09
+- Fixed an issue where the setMode command for Air Purifier VOC,Table VOC,PM2.5,Table PM2.5 was not functioning properly.
+
 ## v1.0.33 - 2025-01-30
 - Fixed an issue where the setPosition command for Roller Shade was not functioning properly.
 
