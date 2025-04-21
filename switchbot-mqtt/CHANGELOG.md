@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.36 - 2025-04-21
+- Fixed problem with Blind Tilt's setPosition command not working.
+
 ## v1.0.35 - 2025-04-09
 ## v1.0.34 - 2025-04-09
 - Fixed an issue where the setMode command for Air Purifier VOC,Table VOC,PM2.5,Table PM2.5 was not functioning properly.
