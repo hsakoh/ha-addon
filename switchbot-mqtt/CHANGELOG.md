@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v1.0.37 - 2025-04-28
+- Support for the following new documented device has been added:
+    - W7202100 Hub 3
+    - W5110000 Smart Lock Lite
+    - W5600000 Smart Lock Ultra
+    - W5600003 Keypad Vision
+    - W5502320 Relay Switch 2PM
+    - W5502330 Garage Door Opener
+    - W1702110 RGBWW Strip Light 3
+    - W1702100 RGBWW Floor Lamp
+    - W6602310 Floor Cleaning Robot S20
+    - W3002520 Multitasking Household Robot K20+ Pro
+    - W6702000 Video Doorbell
+
 ## v1.0.36 - 2025-04-21
 - Fixed problem with Blind Tilt's setPosition command not working.
 
