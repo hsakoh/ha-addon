@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## v1.0.38 - 2025-05-01
+- Reflecting the actual device check results for RGBWW Strip Light 3:
+    - ApiDeviceType `LED Strip Light3` -> `Strip Light3`
+    - Get device status `online` field missing (delete)
+- Reflecting the actual device check results for Relay Switch 1,1PM,2PM:
+    - Change the data type of the `voltage` and `power` fields for each device from integer to float.
+    - Add the `hubDeviceId` field for each device.
+    - Add `voltage`, `power`, `usedElectricity`, and `electricCurrent` for Relay Switch 1 (always 0).
+    - Adjust the case sensitivity of the status fields for Relay Switch 2PM to match the actual API specifications, e.g., `switch1usedElectricity` to `switch1UsedElectricity`.
+    - Add arguments to the `turnOff` command for Relay Switch 2PM.
+    - Change the argument transmission method for the `setMode` command of Relay Switch 2PM from comma-separated to semicolon-separated.
+    - Remove the `setPosition` command for Relay Switch 2PM.
+
 ## v1.0.37 - 2025-04-28
 - Support for the following new documented device has been added:
     - W7202100 Hub 3
