@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.39 - 2025-05-20
+- Reflecting the actual device check results for Hub 3
+    - Change the field name of `online` to `onlineStatus`.
+
 ## v1.0.38 - 2025-05-01
 - Reflecting the actual device check results for RGBWW Strip Light 3:
     - ApiDeviceType `LED Strip Light3` -> `Strip Light3`
