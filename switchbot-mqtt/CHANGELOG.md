@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.40 - 2025-05-31
+- Relay Switch 2PM
+    - Added fields and commands for use in roller shade mode.
+    - If you want to add fields to a device that is already registered, delete the device from the Ingress page and add it again.
+
 ## v1.0.39 - 2025-05-20
 - Reflecting the actual device check results for Hub 3
     - Change the field name of `online` to `onlineStatus`.
