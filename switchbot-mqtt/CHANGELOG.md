@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.42 - 2025-06-25
+- Garage Door Opener
+    - Fixed a an issue where the `doorStatus` status being inverted.
+
 ## v1.0.41 - 2025-06-24
 - Lock, Lock Pro, Lock Ultra
     - Support for the new deadbolt command has been added.
