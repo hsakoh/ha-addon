@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.41 - 2025-06-24
+- Lock, Lock Pro, Lock Ultra
+    - Support for the new deadbolt command has been added.
+    - If you are already using one of these devices, the new command will be added by removing the device from the Ingress page, re-fetching it, and saving the updated configuration.
+
 ## v1.0.40 - 2025-05-31
 - Relay Switch 2PM
     - Added fields and commands for use in roller shade mode.
