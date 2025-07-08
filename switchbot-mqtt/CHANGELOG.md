@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.43 - 2025-07-09
+- Followed updates to the API specification
+    - Changed the unit of electricCurrent for PlugMini (US/JP) from amperes to milliamperes
+
 ## v1.0.42 - 2025-06-25
 - Garage Door Opener
     - Fixed a an issue where the `doorStatus` status being inverted.
