@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.44 - 2025-07-24
+- Reflecting the actual device check results for OutdoorMeter
+    - Change the FieldSourceType of Battery from `Status` to `Both`.
+        - If you are using any of these devices, please delete the MQTT device, then delete and reacquire the device on the Ingress page, and restart the add-on.
+        - (You don't necessarily need to reacquire them; it's not a significant update in practical terms.)
+
 ## v1.0.43 - 2025-07-09
 - Followed updates to the API specification
     - Changed the unit of electricCurrent for PlugMini (US/JP) from amperes to milliamperes
