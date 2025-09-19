@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v1.0.45 - 2025-09-19
+- Support for the following new documented device has been added:
+    - W7830000 Smart Radiator Thermostat
+    - W3003100 Robot Vacuum K11+
+    - W7732300 Plug Mini (EU)
+    - W1702109 RGBICWW Strip Light
+    - W1702101 RGBICWW Floor Lamp
+    - W1702108 RGBIC Neon Wire Rope Light
+
 ## v1.0.44 - 2025-07-24
 - Reflecting the actual device check results for OutdoorMeter
     - Change the FieldSourceType of Battery from `Status` to `Both`.
