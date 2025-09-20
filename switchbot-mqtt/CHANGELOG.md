@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.46 - 2025-09-21
+- Fix ngrok tunnel creation issue.
+
 ## v1.0.45 - 2025-09-19
 - Support for the following new documented device has been added:
     - W7830000 Smart Radiator Thermostat
