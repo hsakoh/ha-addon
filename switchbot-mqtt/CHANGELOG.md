@@ -1,8 +1,9 @@
 # CHANGELOG
 
+## v1.0.48 - 2025-10-12
 ## v1.0.47 - 2025-10-12
 - Lock, Lock Lite, Lock Pro, Lock Ultra
-    - In the Lock series, when `latchBoltLocked` is received via the `lockState` (through API or Webhook), the binary sensor (Lock) state will now be treated as `locked`.
+    - In the Lock series, when `latchBoltLocked` is received via the `lockState` (through API or Webhook), the binary sensor (Lock) state will now be treated as `unlocked`.
     - (Note: This specification update is not yet documented in the API specification.)
 
 ## v1.0.46 - 2025-09-21
