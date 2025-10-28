@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.49 - 2025-10-29
+- Fixes for Robot Vacuum K11+:
+    - Changed API device type from `Robot Vacuum Cleaner K11+` to `Robot Vacuum Cleaner K11 Plus`.
+    - Corrected the definition error for payload_on/payload_off in the `enableCloudService` field (binary sensor).
+
 ## v1.0.48 - 2025-10-12
 ## v1.0.47 - 2025-10-12
 - Lock, Lock Lite, Lock Pro, Lock Ultra
