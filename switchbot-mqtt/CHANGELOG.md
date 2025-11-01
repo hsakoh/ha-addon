@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.50 - 2025-11-01
+- Internal implementation improvements:
+    - Changed the device master from CSV format to individual JSON format for each device.
+
 ## v1.0.49 - 2025-10-29
 - Fixes for Robot Vacuum K11+:
     - Changed API device type from `Robot Vacuum Cleaner K11+` to `Robot Vacuum Cleaner K11 Plus`.
