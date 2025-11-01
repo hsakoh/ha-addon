@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.51 - 2025-11-02
+- Changed the API device type for the Smart Radiator Thermostat.
+
 ## v1.0.50 - 2025-11-01
 - Internal implementation improvements:
     - Changed the device master from CSV format to individual JSON format for each device.
