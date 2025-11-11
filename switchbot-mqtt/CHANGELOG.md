@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.52 - 2025-11-11
+- Support for the following undocumented device has been added:
+    - W7400000 Climate Panel
+    - W8200000 Presence Sensor
+
 ## v1.0.51 - 2025-11-02
 - Changed the API device type for the Smart Radiator Thermostat.
 
