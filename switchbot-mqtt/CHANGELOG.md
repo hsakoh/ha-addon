@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.53 - 2025-11-14
+- Added default_entity_id to the MQTT device discovery payload because object_id has been deprecated.
+    - This change suppresses deprecation warnings that have been appearing in versions Home Assistant Core 2025.10 and later. [#100](https://github.com/hsakoh/switchbot-mqtt/issues/100)
+
 ## v1.0.52 - 2025-11-11
 - Support for the following undocumented device has been added:
     - W7400000 Climate Panel
