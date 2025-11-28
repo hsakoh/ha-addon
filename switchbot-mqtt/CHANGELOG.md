@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.54 - 2025-11-28
+- Added support for the undocumented Webhook payload field (`fanGear`) for Air Purifier VOC,Table VOC,PM2.5,Table PM2.5.
+    - If you want to add fields to a device that is already registered, delete the device from the Ingress page and add it again.
+
+
 ## v1.0.53 - 2025-11-14
 - Added default_entity_id to the MQTT device discovery payload because object_id has been deprecated.
     - This change suppresses deprecation warnings that have been appearing in versions Home Assistant Core 2025.10 and later. [#100](https://github.com/hsakoh/switchbot-mqtt/issues/100)
