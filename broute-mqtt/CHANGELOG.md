@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.9 - 2025-12-04
+- Added default_entity_id to the MQTT device discovery payload because object_id has been deprecated.
+    - This change suppresses deprecation warnings that have been appearing in versions Home Assistant Core 2025.10 and later. 
+
 ## v1.0.8 - 2025-03-08
 - change instantaneous_electric_power device class(APPARENT_POWER->POWER)
 
