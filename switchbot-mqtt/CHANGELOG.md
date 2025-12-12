@@ -1,5 +1,29 @@
 # CHANGELOG
 
+## v1.0.55 - 2025-12-13
+- Add newly documented devices
+    - W1702107 RGBIC Neon Rope Light
+    - W3800520 Standing Circulator Fan
+    - W5600009 Keypad Vision Pro
+    - W8002100 AI Hub
+    - W8302100,W8302101 Candle Warmer Lamp
+    - W8402000,W8402010,W8402020 AI Art Frame
+    - W3101102 Pan/Tilt Cam Plus 2K
+- Update existing devices with additional fields or commands
+    - W7400000 Home Climate Panel
+       - Added scale field
+    - W8200000 Prensence Sensor
+       - Added lightLevel field
+    - W3800510 Battery Circulator Fan
+       - Added closeDelay command
+    - W3800511 Circulator Fan
+       - Added closeDelay command
+    - W4001100 Pan/Tilt Cam Plus 3K
+       - Modified API Device Type String
+       - Device now returns API Device Type
+       - If you explicitly specified Pan/Tilt Cam Plus 5MP in EnforceDeviceTypes, please remove it
+- Fixed issue where add-on image size became larger after v1.0.53
+
 ## v1.0.54 - 2025-11-28
 - Added support for the undocumented Webhook payload field (`fanGear`) for Air Purifier VOC,Table VOC,PM2.5,Table PM2.5.
     - If you want to add fields to a device that is already registered, delete the device from the Ingress page and add it again.
