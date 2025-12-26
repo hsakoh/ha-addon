@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.56 - 2025-12-26
+- Upgrade ASP.NET runtime from version 8 to 10.
+- Changed to self-contained deployment.
+
 ## v1.0.55 - 2025-12-13
 - Add newly documented devices
     - W1702107 RGBIC Neon Rope Light
