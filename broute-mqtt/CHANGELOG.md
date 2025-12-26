@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.10 - 2025-12-26
+- Upgrade .NET runtime from version 8 to 10.
+- Changed to self-contained deployment.
+
 ## v1.0.9 - 2025-12-04
 - Added default_entity_id to the MQTT device discovery payload because object_id has been deprecated.
     - This change suppresses deprecation warnings that have been appearing in versions Home Assistant Core 2025.10 and later. 

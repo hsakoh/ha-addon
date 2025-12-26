@@ -1,6 +1,6 @@
 name: "BRoute-Mqtt"
 description: "[For Japan] Integrate low-voltage smart energy meters into Home Assistant's MQTT as devices/sensors via the Wi-SUN dongle and ECHONET Lite protocol."
-version: "1.0.9"
+version: "1.0.10"
 slug: "broute_mqtt"
 url: "https://github.com/hsakoh/broute-mqtt"
 startup: application
