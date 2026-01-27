@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.11 - 2026-01-27
+- Changed the .NET runtime to explicitly define the virtual memory range reserved(but not used) for the GC heap.
+- This prevents the TOP command from showing an extremely large VIRT value.
+
 ## v1.0.10 - 2025-12-26
 - Upgrade .NET runtime from version 8 to 10.
 - Changed to self-contained deployment.
