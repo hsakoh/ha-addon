@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.58 - 2026-02-01
+- Fix an issue where startup could fail due to insufficient reserved virtual memory for the GC heap when a large number of CPU cores are allocated.
+
 ## v1.0.57 - 2026-01-27
 - Changed the .NET runtime to explicitly define the virtual memory range reserved(but not used) for the GC heap.
 - This prevents the TOP command from showing an extremely large VIRT value.
