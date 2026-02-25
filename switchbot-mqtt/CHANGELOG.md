@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.59 - 2026-02-25
+- Fixed issue with RobotVacuumCleanerS20's selfClean command not working.
+
 ## v1.0.58 - 2026-02-01
 - Fix an issue where startup could fail due to insufficient reserved virtual memory for the GC heap when a large number of CPU cores are allocated.
 
