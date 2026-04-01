@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.12 - 2026-04-02
+- Fix handling of ERXUDP events with different lengths when SA2 flag is enabled on BP35C0
+
 ## v1.0.11 - 2026-01-27
 - Changed the .NET runtime to explicitly define the virtual memory range reserved(but not used) for the GC heap.
 - This prevents the TOP command from showing an extremely large VIRT value.
