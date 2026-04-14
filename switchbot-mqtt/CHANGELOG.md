@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v1.0.60 - 2026-04-14
+- Added support for nested webhook payloads in camera devices (e.g., `motionEvent`, `ringEvent` inside the `context` field).
+    - Introduced `WebhookParentKey` in field definitions to extract fields from nested objects.
+    - Introduced `IsImage` flag in field definitions for fields that carry presigned image URLs.
+- Added MQTT Image entity support (Home Assistant `image` type via MQTT Discovery).
+    - Image fields (e.g., `motionImageUrl`) are downloaded from presigned S3 URLs and published as Base64-encoded JPEG to a dedicated topic (`switchbot/{deviceId}/image/{fieldName}`).
+    - The URL itself is not stored in the state topic.
+    - Supported devices: Pan/Tilt Cam Plus, Video Doorbell.
+    - If you want to add the image entity to a device that is already registered, delete the device from the Ingress page and add it again.
+- Added missing fields to physical device definitions:
+    - CeilingLight, ColorBulb, PlugMiniJp: Added `online` webhook binary sensor field (connectivity).
+    - CirculatorFan: Added `chargingStatus` field.
+    - MotionSensor: Changed `brightness` field source from status-only to both (status + webhook).
+        - The `unique_id` for the `brightness` sensor will change. Please either delete the MQTT devices and restart the add-on or manually delete the old MQTT sensor (`status_brightness_{deviceId}`).
+    - If you want to add fields to a device that is already registered, delete the device from the Ingress page and add it again.
+
 ## v1.0.59 - 2026-02-25
 - Fixed issue with RobotVacuumCleanerS20's selfClean command not working.
 
