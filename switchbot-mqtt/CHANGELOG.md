@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.61 - 2026-04-17
+- Added `ExitOnServiceFailure` option (default: `false`).
+    - When enabled, the application exits if any service (MQTT, Polling, or Webhook) enters a failed state, allowing the Home Assistant Supervisor's watchdog to handle automatic restart.
+
 ## v1.0.60 - 2026-04-14
 - Added support for nested webhook payloads in camera devices (e.g., `motionEvent`, `ringEvent` inside the `context` field).
     - Introduced `WebhookParentKey` in field definitions to extract fields from nested objects.
