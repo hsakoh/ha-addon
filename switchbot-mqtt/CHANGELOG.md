@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.62 - 2026-05-05
+- Made image fetch retry behavior configurable via `ImageFetch` options.
+    - `ImageFetch:MaxRetries` (default: `25`): Maximum number of retry attempts when a presigned image URL returns a 404 response.
+    - `ImageFetch:RetryIntervalMs` (default: `1000`): Interval in milliseconds between retry attempts.
+    
 ## v1.0.61 - 2026-04-17
 - Added `ExitOnServiceFailure` option (default: `false`).
     - When enabled, the application exits if any service (MQTT, Polling, or Webhook) enters a failed state, allowing the Home Assistant Supervisor's watchdog to handle automatic restart.
