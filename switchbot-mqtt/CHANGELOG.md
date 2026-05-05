@@ -4,6 +4,7 @@
 - Made image fetch retry behavior configurable via `ImageFetch` options.
     - `ImageFetch:MaxRetries` (default: `25`): Maximum number of retry attempts when a presigned image URL returns a 404 response.
     - `ImageFetch:RetryIntervalMs` (default: `1000`): Interval in milliseconds between retry attempts.
+- [How to set up Browser Push Notifications with Thumbnails for SwitchBot Doorbell/Cameras (via HTML5 Notification)  Discussion #116](https://github.com/hsakoh/switchbot-mqtt/discussions/116)
     
 ## v1.0.61 - 2026-04-17
 - Added `ExitOnServiceFailure` option (default: `false`).
