@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.63 - 2026-05-08
+- Added support for `humanEvent` webhook payload in Video Doorbell.
+    - Added fields: `humanDetectionType`, `humanImageUrl`, `humanEventTime`.
+    - If you want to add these fields to an already registered device, delete the device from the Ingress page and add it again.
+    
 ## v1.0.62 - 2026-05-05
 - Made image fetch retry behavior configurable via `ImageFetch` options.
     - `ImageFetch:MaxRetries` (default: `25`): Maximum number of retry attempts when a presigned image URL returns a 404 response.
