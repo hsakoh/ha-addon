@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.0.64 - 2026-05-08
+- Added missing fields to physical device definitions:
+    - StripLight, StripLight3, RGBICNeonWireRopeLight: Added `online` webhook binary sensor field (connectivity).
+    - Lock, LockPro, LockUltra: Changed `doorState` field source from status-only to both (status + webhook). Webhook values (`OPENED`/`CLOSED`) are now normalized to lowercase to match the Status API format.
+        - The `unique_id` for the `doorState` sensor will change. Please either delete the MQTT devices and restart the add-on or manually delete the old MQTT binary sensor (`status_doorState_{deviceId}`).
+    - If you want to add fields to a device that is already registered, delete the device from the Ingress page and add it again.
+    
 ## v1.0.63 - 2026-05-08
 - Added support for `humanEvent` webhook payload in Video Doorbell.
     - Added fields: `humanDetectionType`, `humanImageUrl`, `humanEventTime`.
