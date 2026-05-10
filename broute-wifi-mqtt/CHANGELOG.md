@@ -1,0 +1,4 @@
+# CHANGELOG
+
+## v0.0.1 - 2026-05-10
+- Initial release

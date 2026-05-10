@@ -10,6 +10,7 @@ Please open all issues on their relevant Github project pages.
 |----------------|----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | switchbot-mqtt | [https://github.com/hsakoh/switchbot-mqtt/](https://github.com/hsakoh/switchbot-mqtt/) | ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armv7 Architecture][armv7-shield]    |
 | broute-mqtt    | [https://github.com/hsakoh/broute-mqtt/](https://github.com/hsakoh/broute-mqtt/)       | ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armv7 Architecture][no-armv7-shield] |
+| broute-wifi-mqtt | [https://github.com/hsakoh/broute-wifi-mqtt/](https://github.com/hsakoh/broute-wifi-mqtt/) | ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armv7 Architecture][no-armv7-shield] |
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
