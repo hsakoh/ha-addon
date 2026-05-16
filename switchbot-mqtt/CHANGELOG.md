@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v1.0.65 - 2026-05-16
+- Added support for new device types: WeatherStation, LockProMatterEnabled, LockVision, LockVisionPro.
+- AIArtFrame: Changed `battery` and `displayMode` field source from webhook-only to both (status + webhook). Added `uploadImage` command.
+    - The `unique_id` for the `battery` and `displayMode` sensors will change. Please either delete the MQTT devices and restart the add-on or manually delete the old MQTT sensors (`webhook_battery_{deviceId}`, `webhook_displayMode_{deviceId}`).
+    - If you want to add the `uploadImage` command to an already registered device, delete the device from the Ingress page and add it again.
+- LockUltra: Updated `lockState` field description to reflect correct values (`jammed`, `unlock`, `lock`, `latchBoltLocked`).
+    - No action required. This is a description-only change and does not affect entity behavior.
+
 ## v1.0.64 - 2026-05-08
 - Added missing fields to physical device definitions:
     - StripLight, StripLight3, RGBICNeonWireRopeLight: Added `online` webhook binary sensor field (connectivity).
