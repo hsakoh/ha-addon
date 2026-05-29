@@ -5,16 +5,9 @@
 
 ## v1.0.66 - 2026-05-28
 - fix: add battery and version status fields to KeypadTouch.
-- workaround: StandingCirculatorFan is now treated as `Fan` type to match a discrepancy in the SwitchBot API where the device reports its type as `"Fan"` instead of `"StandingCirculatorFan"`.
+- ~~workaround: treat StandingCirculatorFan as `Fan` type based on a user report that the SwitchBot API returns `"Fan"` — this report was incorrect; the user had misconfigured `EnforceDeviceTypes`. Corrected in v1.0.67.~~
 
-> **⚠️ Action Required for Standing Circulator Fan Users**
->
-> Please follow the steps below to reconfigure your device.
-> 1. Delete the affected device from the add-on's Ingress page
-> 2. Stop the add-on
-> 3. Delete the affected device from the Home Assistant MQTT integration page (`/config/integrations/integration/mqtt`)
-> 4. Update the add-on to the latest version
-> 5. Re-fetch the device from the add-on's Ingress page
+> ~~**⚠️ Action Required for Standing Circulator Fan Users** — No action needed. This workaround was incorrect and has been reverted in v1.0.67.~~
 
 ## v1.0.65 - 2026-05-16
 - Added support for new device types: WeatherStation, LockProMatterEnabled, LockVision, LockVisionPro.
