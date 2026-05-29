@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.67 - 2026-05-29
+- fix: correct AdditionalApiDeviceTypeStrings for StandingCirculatorFan
+
 ## v1.0.66 - 2026-05-28
 - fix: add battery and version status fields to KeypadTouch.
 - workaround: StandingCirculatorFan is now treated as `Fan` type to match a discrepancy in the SwitchBot API where the device reports its type as `"Fan"` instead of `"StandingCirculatorFan"`.
