@@ -1,5 +1,47 @@
 # CHANGELOG
 
+## v1.1.0 - 2026-05-31
+
+### ✨ New Feature: Multiple Webhook Tunnel Mode Support
+
+Previously, the only tunnel option was Ngrok. However, Ngrok's free tier is limited to 20,000 requests/month — once exceeded, webhook reception stops entirely until the next billing cycle. To address this, Cloudflare-based tunnel options have been added as free, unlimited alternatives.
+
+The previous `UseWebhook` / `UseNgrok` boolean flags have been replaced by a single `TunnelMode` setting with five options:
+
+| TunnelMode | Description |
+|---|---|
+| `Disabled` | Webhook disabled. Polling only. |
+| `HostUrl` | Manually configured public URL (requires port-forwarding). |
+| `Ngrok` | Ngrok tunnel (requires `NgrokAuthToken`). Free tier is limited to 20,000 requests/month — webhook reception stops when exceeded. |
+| `TryCloudflare` | Cloudflare TryCloudflare (also known as Quick Tunnel) — no account needed, random URL issued at each startup. No request limit. |
+| `CloudflareZeroTrust` | Cloudflare Zero Trust tunnel — fixed URL, requires `CloudflareTunnelToken` and `HostUrl`. No request limit. |
+
+The default value is `TryCloudflare`, which requires no account, no port-forwarding, and has no request limits — making it the recommended choice for most users.
+
+For setup details of each mode, see [Differences in Webhook Reception Methods](https://github.com/hsakoh/switchbot-mqtt/wiki/HowToInstall#differences-in-webhook-reception-methods) in the Wiki.
+
+**⚠️ Migration Required**
+The previous `UseWebhook` and `UseNgrok` settings are no longer recognized.
+Please update your configuration as follows:
+
+| Previous settings | New setting |
+|---|---|
+| `UseWebhook: false` | `TunnelMode: Disabled` |
+| `UseWebhook: true, UseNgrok: false` | `TunnelMode: HostUrl` |
+| `UseWebhook: true, UseNgrok: true` | `TunnelMode: Ngrok` |
+
+See also: [Add-on Configuration — Webhook](https://github.com/hsakoh/switchbot-mqtt/wiki/HowToInstall#webhook) for full configuration examples.
+
+### 🐛 Bug Fixes & Device Definition Updates
+
+- Added `onlineStatus` webhook binary sensor field to LockUltra.
+    - If you want to add this field to an already registered device, delete the device from the Ingress page and add it again.
+- KeypadTouch: added `WebhookKey` for `battery` field (source changed from status-only to both status and webhook).
+    - The `unique_id` for the `battery` sensor will change. Please either delete the MQTT devices and restart the add-on or manually delete the old MQTT sensor (`status_battery_{deviceId}`).
+- StripLight3: removed duplicate `onlineStatus` field (no action required).
+- RobotVacuumCleanerS10: removed duplicate `deviceName` field (no action required).
+- MqttCoreService: when a field present in the device definition is missing from the saved config (e.g. after a device definition update), now logs a Warning with guidance to re-fetch the device instead of throwing an exception.
+
 ## v1.0.67 - 2026-05-29
 - fix: correct AdditionalApiDeviceTypeStrings for StandingCirculatorFan
 
