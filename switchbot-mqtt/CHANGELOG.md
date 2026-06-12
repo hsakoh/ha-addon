@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.1.1 - 2026-06-12
+- Add Outdoor Pan/Tilt Cam 3K (W1156000) device support with motion and human event webhooks
+  - Note: Since the SwitchBot API does not return a device type string for this device, you must manually specify it via `EnforceDeviceTypes` in your configuration:
+    ```yaml
+    EnforceDeviceTypes:
+      - DeviceId: "YOUR_DEVICE_MAC_ADDRESS"
+        DeviceType: "Outdoor Pan/Tilt Cam 3K"
+    ```
+- Auto-restart cloudflared and re-register webhook on unexpected exit (max 5 retries, exponential back-off)
+
 ## v1.1.0 - 2026-05-31
 
 ### ✨ New Feature: Multiple Webhook Tunnel Mode Support
