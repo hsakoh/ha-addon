@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## v1.1.2 - 2026-06-20
+- PanTiltCamPlus 3K(5MP), 2K(3MP) and Outdoor Pan/Tilt Cam 3K: added Status API support (device now polls and publishes the `latestImage` snapshot as an MQTT image). Enabled status polling and added `hubDeviceId`, `latestImageUrl` (image), `latestImageExpireAt` fields.
+    - `deviceId` and `deviceType` field source changed from webhook-only to both (status + webhook). The `unique_id` for these sensors changes (`webhook_deviceId_{deviceId}` / `webhook_deviceType_{deviceId}` -> `status_*`). Please either delete the MQTT devices and restart the add-on, or manually delete the old MQTT sensors.
+    - To add the newly added fields to an already registered device, delete the device from the Ingress page and add it again.
+- Fixed PanTiltCamPlus 2K(3MP) device definition that incorrectly used the `PanTiltCamPlus5mp` device type enum (now `PanTiltCamPlus3mp`), and aligned its field definitions with the 5MP model. No action required for existing devices; re-fetch to normalize the device type.
+- Outdoor Pan/Tilt Cam 3K: the SwitchBot device list API still does not return a device type string for this device, so `EnforceDeviceTypes` configuration remains required to register it:
+    ```yaml
+    EnforceDeviceTypes:
+      - DeviceId: "YOUR_DEVICE_MAC_ADDRESS"
+        DeviceType: "Outdoor PTC 3K"
+    ```
+    - `ApiDeviceTypeString` changed to `Outdoor PTC 3K` (the previous `Outdoor Pan/Tilt Cam 3K` is kept as an alias, so existing `EnforceDeviceTypes` entries using the old value continue to work). The Home Assistant device "Model" label changes; no other action required.
+
 ## v1.1.1 - 2026-06-12
 - Add Outdoor Pan/Tilt Cam 3K (W1156000) device support with motion and human event webhooks
   - Note: Since the SwitchBot API does not return a device type string for this device, you must manually specify it via `EnforceDeviceTypes` in your configuration:
