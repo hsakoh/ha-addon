@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.1.3 - 2026-06-22
+- PanTiltCamPlus 3K(5MP), 2K(3MP): added human event webhook fields (`humanDetectionType`, `humanImageUrl`, `humanStartTimestamp`).
+- Keypad, Keypad Touch, Keypad Vision, Keypad Vision Pro: added the `keyName` webhook field. The SwitchBot webhook for `createKey` / `deleteKey` includes a `keyName` field that is not in the official API docs, which previously produced an `unknown webhook payload` warning.
+- For both changes above, to add the newly added fields to an already registered device, delete the device from the Ingress page and add it again. (The payload topic names are unchanged, so no MQTT sensor deletion is required.)
+
 ## v1.1.2 - 2026-06-20
 - PanTiltCamPlus 3K(5MP), 2K(3MP) and Outdoor Pan/Tilt Cam 3K: added Status API support (device now polls and publishes the `latestImage` snapshot as an MQTT image). Enabled status polling and added `hubDeviceId`, `latestImageUrl` (image), `latestImageExpireAt` fields.
     - `deviceId` and `deviceType` field source changed from webhook-only to both (status + webhook). The `unique_id` for these sensors changes (`webhook_deviceId_{deviceId}` / `webhook_deviceType_{deviceId}` -> `status_*`). Please either delete the MQTT devices and restart the add-on, or manually delete the old MQTT sensors.
