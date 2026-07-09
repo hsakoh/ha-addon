@@ -1,6 +1,6 @@
 name: "BRoute-WiFi-Mqtt"
 description: "[For Japan] Integrate generation 2 low-voltage smart energy meters into Home Assistant's MQTT as devices/sensors via Wi-Fi and ECHONET Lite protocol."
-version: "0.0.2"
+version: "0.0.3"
 slug: "broute_wifi_mqtt"
 url: "https://github.com/hsakoh/broute-wifi-mqtt"
 startup: application
@@ -22,6 +22,7 @@ options:
     PropertyReadRetryDelay: '00:00:05'
     PropertyReadIntervalDelay: '00:00:02'
     ContinuePollingOnError: true
+    DiscoveryTimeout: '00:00:30'
   Mqtt:
     AutoConfig: true
     Host: ''
@@ -39,6 +40,7 @@ schema:
     PropertyReadRetryDelay: str
     PropertyReadIntervalDelay: str
     ContinuePollingOnError: bool
+    DiscoveryTimeout: str
   Mqtt:
     AutoConfig: bool
     Host: str?
