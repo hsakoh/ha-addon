@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.1.4 - 2026-07-24
+- Add support for 5 new device types per the official API spec: Battery Circulator Fan 2 Pro, Permanent Outdoor Lights, RGBICWW Ceiling Light, Kata Friends, and AI MindClip
+- Fix state reference in value_template for BinarySensorConfig
+
 ## v1.1.3 - 2026-06-22
 - PanTiltCamPlus 3K(5MP), 2K(3MP): added human event webhook fields (`humanDetectionType`, `humanImageUrl`, `humanStartTimestamp`).
 - Keypad, Keypad Touch, Keypad Vision, Keypad Vision Pro: added the `keyName` webhook field. The SwitchBot webhook for `createKey` / `deleteKey` includes a `keyName` field that is not in the official API docs, which previously produced an `unknown webhook payload` warning.
