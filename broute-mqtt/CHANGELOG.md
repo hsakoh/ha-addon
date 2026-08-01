@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## v1.1.0 - 2026-08-01
+- 第2世代スマートメーターに対応(Bルート識別番号(0xC0)・1分積算電力量(0xD0)のセンサー/ボタンを追加、Appendix Release R(rev4)に更新)
+- 複数メーター巡回モードを追加(Meters 設定による 接続→取得→切断 の巡回、PAN情報キャッシュ、メーター毎のMQTT公開)
+- broute-wifi-mqtt との同時稼働向けに識別子へ _wisun サフィックスを付与する AddWiSunSuffix オプションを追加
+- HAデバイス名に製造番号を含めるよう変更
+- 単体モードでPANAセッション喪失時に次回ポーリングで自動再接続するよう修正
+- メーター初期化タイムアウト時にホストが停止する問題を修正し、セッション再確立リトライ・PAN未発見メーターの除外・再接続前クールダウンを追加
+- PANA接続タイムアウトの既定値を60秒に変更、プロパティ読み出し間隔(PropertyReadIntervalDelay)を設定可能に
+
 ## v1.0.12 - 2026-04-02
 - Fix handling of ERXUDP events with different lengths when SA2 flag is enabled on BP35C0
 
