@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.1.6 - 2026-10-09
+- Keypad Vision: added the `battery` (status / webhook) and `version` (status) fields. (hsakoh/switchbot-mqtt#121)
+- Lock Lite: added the `deadbolt` command.
+- To apply the two changes above to an already registered device, delete it from the Ingress page and add it again. (No MQTT sensor deletion is required.)
+- Lock devices: the `halfLocked` value of `lockState` is now treated as `locked`.
+- Updated device type strings: Climate Panel (API; `Home Climate Panel` is also accepted), Plug Mini (EU) and Lock Ultra (webhook).
+
 ## v1.1.5 - 2026-10-08
 - Keypad Vision Pro: added the `battery` (status / webhook) and `version` (status) fields. The SwitchBot API returns these fields for Keypad Vision Pro although they are not yet in the official API docs, which previously produced `unknown status payload` / `unknown webhook payload` warnings. (#121)
 - To add the new fields to an already registered Keypad Vision Pro, delete the device from the Ingress page and add it again. (The payload topic names are unchanged, so no MQTT sensor deletion is required.)
