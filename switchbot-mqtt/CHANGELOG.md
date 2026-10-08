@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.1.5 - 2026-10-08
+- Keypad Vision Pro: added the `battery` (status / webhook) and `version` (status) fields. The SwitchBot API returns these fields for Keypad Vision Pro although they are not yet in the official API docs, which previously produced `unknown status payload` / `unknown webhook payload` warnings. (#121)
+- To add the new fields to an already registered Keypad Vision Pro, delete the device from the Ingress page and add it again. (The payload topic names are unchanged, so no MQTT sensor deletion is required.)
+
 ## v1.1.4 - 2026-07-24
 - Add support for 5 new device types per the official API spec: Battery Circulator Fan 2 Pro, Permanent Outdoor Lights, RGBICWW Ceiling Light, Kata Friends, and AI MindClip
 - Fix state reference in value_template for BinarySensorConfig
